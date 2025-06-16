@@ -77,11 +77,9 @@
 }
 
 .header-text h1 span {
- background: linear-gradient(90deg, #d4af37, rgb(184, 225, 22));
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #d4af37;
 }
+
 
         .header-text p{
             color: #b0b0ff;
@@ -109,6 +107,29 @@
             object-fit: cover;
             filter: grayscale(20%) contrast(110%);
         }
+
+        @media (max-width: 768px) {
+  .profile-img {
+    position: relative;  /* Not absolute */
+    top: auto;
+    right: auto;
+    transform: none;
+    width: 280px;
+    height: 280px;
+    margin: 30px auto 40px;
+  }
+
+  .header-text {
+    margin-top: 30%;
+    text-align: center;
+  }
+
+  #header {
+    height: auto;
+    padding-bottom: 80px; /* Add some bottom space so nothing overlaps */
+  }
+}
+
         /* -----------about--------------- */
   #about {
   padding: 80px 0;
@@ -168,7 +189,7 @@
   display: flex;
   margin: 20px 0 40px;
   border-bottom: 1px solid #2a2a4a;
-  overflow-x: auto;
+
 }
 
 .tab-links {
